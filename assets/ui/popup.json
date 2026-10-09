@@ -1,0 +1,94 @@
+{
+  "Content": {
+    "Content": {
+      "ObjectData": {
+        "Alpha": 255,
+        "Name": "Popup",
+        "Children": [
+          {
+            "Alpha": 255,
+            "Name": "PopupTitle",
+            "LabelText": "Modal popup",
+            "Size": {
+              "X": 330,
+              "Y": 32
+            },
+            "Position": {
+              "X": 180,
+              "Y": 145
+            },
+            "VerticalAlignmentType": "HT_Center",
+            "CColor": {
+              "R": 255,
+              "B": 255,
+              "G": 255
+            },
+            "ctype": "TextObjectData",
+            "HorizontalAlignmentType": "HT_Center",
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "FontSize": 20
+          },
+          {
+            "NormalFileData": {
+              "Path": "pixel.png"
+            },
+            "Alpha": 255,
+            "Name": "CloseButton",
+            "TouchEnable": true,
+            "ButtonText": "Close",
+            "Size": {
+              "X": 180,
+              "Y": 44
+            },
+            "Position": {
+              "X": 180,
+              "Y": 60
+            },
+            "CColor": {
+              "R": 72,
+              "B": 164,
+              "G": 178
+            },
+            "PressedFileData": {
+              "Path": "pixel.png"
+            },
+            "ctype": "ButtonObjectData",
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            }
+          }
+        ],
+        "SingleColor": {
+          "R": 28,
+          "B": 60,
+          "G": 42
+        },
+        "Size": {
+          "X": 360,
+          "Y": 200
+        },
+        "ComboBoxIndex": 1,
+        "Position": {
+          "X": 0,
+          "Y": 0
+        },
+        "BackColorAlpha": 255,
+        "CColor": {
+          "R": 255,
+          "B": 255,
+          "G": 255
+        },
+        "ctype": "PanelObjectData",
+        "AnchorPoint": {
+          "ScaleX": 0,
+          "ScaleY": 0
+        }
+      }
+    }
+  },
+  "Version": "3.10"
+}

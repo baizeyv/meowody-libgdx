@@ -1,0 +1,173 @@
+{
+  "Content": {
+    "Content": {
+      "ObjectData": {
+        "ctype": "SingleNodeObjectData",
+        "Children": [
+          {
+            "HorizontalAlignmentType": "HT_Center",
+            "ctype": "TextObjectData",
+            "FontSize": 20,
+            "VerticalAlignmentType": "HT_Center",
+            "Size": {
+              "X": 500,
+              "Y": 32
+            },
+            "LabelText": "MEOWODY - Cocos UI",
+            "Position": {
+              "X": 320,
+              "Y": 370
+            },
+            "Name": "Title",
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Alpha": 255,
+            "CColor": {
+              "R": 255,
+              "B": 255,
+              "G": 255
+            }
+          },
+          {
+            "HorizontalAlignmentType": "HT_Center",
+            "ctype": "TextObjectData",
+            "FontSize": 20,
+            "VerticalAlignmentType": "HT_Center",
+            "Size": {
+              "X": 500,
+              "Y": 32
+            },
+            "LabelText": "Saved counter: 0",
+            "Position": {
+              "X": 320,
+              "Y": 310
+            },
+            "Name": "Status",
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Alpha": 255,
+            "CColor": {
+              "R": 255,
+              "B": 255,
+              "G": 255
+            }
+          },
+          {
+            "ctype": "ButtonObjectData",
+            "NormalFileData": {
+              "Path": "pixel.png"
+            },
+            "PressedFileData": {
+              "Path": "pixel.png"
+            },
+            "Size": {
+              "X": 240,
+              "Y": 44
+            },
+            "ButtonText": "Add & save",
+            "Position": {
+              "X": 320,
+              "Y": 250
+            },
+            "TouchEnable": true,
+            "Name": "SaveButton",
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Alpha": 255,
+            "CColor": {
+              "R": 72,
+              "B": 164,
+              "G": 178
+            }
+          },
+          {
+            "ctype": "ButtonObjectData",
+            "NormalFileData": {
+              "Path": "pixel.png"
+            },
+            "PressedFileData": {
+              "Path": "pixel.png"
+            },
+            "Size": {
+              "X": 240,
+              "Y": 44
+            },
+            "ButtonText": "Open popup",
+            "Position": {
+              "X": 320,
+              "Y": 190
+            },
+            "TouchEnable": true,
+            "Name": "PopupButton",
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Alpha": 255,
+            "CColor": {
+              "R": 72,
+              "B": 164,
+              "G": 178
+            }
+          },
+          {
+            "ctype": "ButtonObjectData",
+            "NormalFileData": {
+              "Path": "pixel.png"
+            },
+            "PressedFileData": {
+              "Path": "pixel.png"
+            },
+            "Size": {
+              "X": 240,
+              "Y": 44
+            },
+            "ButtonText": "Task after 1 second",
+            "Position": {
+              "X": 320,
+              "Y": 130
+            },
+            "TouchEnable": true,
+            "Name": "TaskButton",
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Alpha": 255,
+            "CColor": {
+              "R": 72,
+              "B": 164,
+              "G": 178
+            }
+          }
+        ],
+        "Size": {
+          "X": 640,
+          "Y": 480
+        },
+        "Position": {
+          "X": 0,
+          "Y": 0
+        },
+        "Name": "Home",
+        "AnchorPoint": {
+          "ScaleX": 0,
+          "ScaleY": 0
+        },
+        "Alpha": 255,
+        "CColor": {
+          "R": 255,
+          "B": 255,
+          "G": 255
+        }
+      }
+    }
+  },
+  "Version": "3.10"
+}
