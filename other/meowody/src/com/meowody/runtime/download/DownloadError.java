@@ -1,0 +1,3 @@
+package com.meowody.runtime.download;
+
+public enum DownloadError { NONE, INVALID_URL, INVALID_OPTIONS, BUSY, NETWORK, TIMEOUT, HTTP, PROTOCOL, FILE_IO, TOO_LARGE, CHECKSUM, CANCELLED, CLOSED, INVALID_HANDLE }

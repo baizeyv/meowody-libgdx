@@ -1,0 +1,56 @@
+apply plugin: "java"
+
+java.sourceCompatibility = JavaVersion.VERSION_17
+java.targetCompatibility = JavaVersion.VERSION_17
+sourceSets.main.java.srcDirs = [
+  "src/"
+]
+sourceSets.test.java.srcDirs = ["test/"]
+
+tasks.register('layoutCheck', JavaExec) {
+  dependsOn testClasses
+  classpath = sourceSets.test.runtimeClasspath
+  mainClass = 'com.meowody.runtime.cocos.CocosLayoutActionCheck'
+}
+
+tasks.register('prefabCheck', JavaExec) {
+  dependsOn testClasses
+  classpath = sourceSets.test.runtimeClasspath
+  mainClass = 'com.meowody.runtime.prefab.PrefabCheck'
+}
+
+tasks.register('prefabPreloadCheck', JavaExec) {
+  dependsOn testClasses
+  classpath = sourceSets.test.runtimeClasspath
+  mainClass = 'com.meowody.runtime.prefab.PrefabPreloadCheck'
+}
+
+tasks.register('loadingBarCheck', JavaExec) {
+  dependsOn testClasses
+  classpath = sourceSets.test.runtimeClasspath
+  mainClass = 'com.meowody.runtime.cocos.LoadingBarCheck'
+}
+
+tasks.register('runtimePerformanceCheck', JavaExec) {
+  dependsOn testClasses
+  classpath = sourceSets.test.runtimeClasspath
+  mainClass = 'com.meowody.runtime.tests.RuntimePerformanceCheck'
+}
+
+dependencies {
+   implementation project(":gdx")
+}
+
+// 指定编码
+tasks.withType(JavaCompile) {
+  options.encoding = "UTF-8"
+}
+
+// 打包源码
+task sourcesJar(type: Jar) {
+  from sourceSets.main.java.srcDirs
+  archiveClassifier.set('sources')
+}
+artifacts {
+  archives sourcesJar
+}
